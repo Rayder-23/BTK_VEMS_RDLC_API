@@ -4,8 +4,8 @@
     <ActiveDebugProfile>https</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
-    <None Update="Reports\DataSet1.xsd">
+    <Content Update="Reports\DataSet1.xsd">
       <SubType>Designer</SubType>
-    </None>
+    </Content>
   </ItemGroup>
 </Project>
