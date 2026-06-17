@@ -4,7 +4,7 @@
     <ActiveDebugProfile>https</ActiveDebugProfile>
   </PropertyGroup>
   <ItemGroup>
-    <Content Update="Reports\DataSet1.xsd">
+    <Content Update="Reports\VoucherDataset.xsd">
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
