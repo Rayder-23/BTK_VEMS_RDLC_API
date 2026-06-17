@@ -1,5 +1,6 @@
 using Microsoft.Reporting.NETCore;
 using VEMS.PrintEngine.Repositories;
+using VEMS.PrintEngine.Models;
 
 namespace VEMS.PrintEngine.Services
 {
@@ -38,6 +39,18 @@ namespace VEMS.PrintEngine.Services
             report.DataSources.Add(new ReportDataSource("VoucherDataset", challanData));
             
             return report.Render("PDF");
+        }
+
+        public async Task<List<FeeChallanReportModel>> GetChallanDataAsync(string challanNo)
+        {
+            var challanData = await _challanRepository.GetChallanPrintDataAsync(challanNo);
+            
+            if (challanData == null || !challanData.Any())
+            {
+                throw new KeyNotFoundException($"No data records found for Challan No: {challanNo}");
+            }
+
+            return challanData;
         }
     }
 }
