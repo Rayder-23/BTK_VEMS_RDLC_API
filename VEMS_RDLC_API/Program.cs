@@ -1,6 +1,7 @@
 using Scalar.AspNetCore; // Scalar UI namespace
 using Microsoft.EntityFrameworkCore;
 using VEMS.PrintEngine.Data;
+using VEMS.PrintEngine.Repositories;
 using VEMS.PrintEngine.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,8 +15,9 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<VemsDbContext>(options =>
     options.UseSqlServer(connectionString));
 
-// Register the printing service engine
-builder.Services.AddScoped<IFeeVoucherService, FeeVoucherService>();
+// Add infrastructure services to DI container
+builder.Services.AddScoped<IFeeChallanRepository, FeeChallanRepository>();
+builder.Services.AddScoped<IFeeChallanService, FeeChallanService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

@@ -20,17 +20,17 @@ namespace VEMS_RDLC_API.Reports {
     [global::System.ComponentModel.DesignerCategoryAttribute("code")]
     [global::System.ComponentModel.ToolboxItem(true)]
     [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedDataSetSchema")]
-    [global::System.Xml.Serialization.XmlRootAttribute("VoucherDataset")]
+    [global::System.Xml.Serialization.XmlRootAttribute("DataSet1")]
     [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.DataSet")]
-    public partial class VoucherDataset : global::System.Data.DataSet {
+    public partial class DataSet1 : global::System.Data.DataSet {
         
-        private FeeVoucherReportModelDataTable tableFeeVoucherReportModel;
+        private FeeChallanTableDataTable tableFeeChallanTable;
         
         private global::System.Data.SchemaSerializationMode _schemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public VoucherDataset() {
+        public DataSet1() {
             this.BeginInit();
             this.InitClass();
             global::System.ComponentModel.CollectionChangeEventHandler schemaChangedHandler = new global::System.ComponentModel.CollectionChangeEventHandler(this.SchemaChanged);
@@ -43,7 +43,7 @@ namespace VEMS_RDLC_API.Reports {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
             " or extended by application code.", DiagnosticId="SYSLIB0051")]
-        protected VoucherDataset(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+        protected DataSet1(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                 base(info, context, false) {
             if ((this.IsBinarySerialized(info, context) == true)) {
                 this.InitVars(false);
@@ -56,8 +56,8 @@ namespace VEMS_RDLC_API.Reports {
             if ((this.DetermineSchemaSerializationMode(info, context) == global::System.Data.SchemaSerializationMode.IncludeSchema)) {
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXmlSchema(new global::System.Xml.XmlTextReader(new global::System.IO.StringReader(strSchema)));
-                if ((ds.Tables["FeeVoucherReportModel"] != null)) {
-                    base.Tables.Add(new FeeVoucherReportModelDataTable(ds.Tables["FeeVoucherReportModel"]));
+                if ((ds.Tables["FeeChallanTable"] != null)) {
+                    base.Tables.Add(new FeeChallanTableDataTable(ds.Tables["FeeChallanTable"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -81,9 +81,9 @@ namespace VEMS_RDLC_API.Reports {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         [global::System.ComponentModel.Browsable(false)]
         [global::System.ComponentModel.DesignerSerializationVisibility(global::System.ComponentModel.DesignerSerializationVisibility.Content)]
-        public FeeVoucherReportModelDataTable FeeVoucherReportModel {
+        public FeeChallanTableDataTable FeeChallanTable {
             get {
-                return this.tableFeeVoucherReportModel;
+                return this.tableFeeChallanTable;
             }
         }
         
@@ -129,7 +129,7 @@ namespace VEMS_RDLC_API.Reports {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public override global::System.Data.DataSet Clone() {
-            VoucherDataset cln = ((VoucherDataset)(base.Clone()));
+            DataSet1 cln = ((DataSet1)(base.Clone()));
             cln.InitVars();
             cln.SchemaSerializationMode = this.SchemaSerializationMode;
             return cln;
@@ -154,8 +154,8 @@ namespace VEMS_RDLC_API.Reports {
                 this.Reset();
                 global::System.Data.DataSet ds = new global::System.Data.DataSet();
                 ds.ReadXml(reader);
-                if ((ds.Tables["FeeVoucherReportModel"] != null)) {
-                    base.Tables.Add(new FeeVoucherReportModelDataTable(ds.Tables["FeeVoucherReportModel"]));
+                if ((ds.Tables["FeeChallanTable"] != null)) {
+                    base.Tables.Add(new FeeChallanTableDataTable(ds.Tables["FeeChallanTable"]));
                 }
                 this.DataSetName = ds.DataSetName;
                 this.Prefix = ds.Prefix;
@@ -190,10 +190,10 @@ namespace VEMS_RDLC_API.Reports {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         internal void InitVars(bool initTable) {
-            this.tableFeeVoucherReportModel = ((FeeVoucherReportModelDataTable)(base.Tables["FeeVoucherReportModel"]));
+            this.tableFeeChallanTable = ((FeeChallanTableDataTable)(base.Tables["FeeChallanTable"]));
             if ((initTable == true)) {
-                if ((this.tableFeeVoucherReportModel != null)) {
-                    this.tableFeeVoucherReportModel.InitVars();
+                if ((this.tableFeeChallanTable != null)) {
+                    this.tableFeeChallanTable.InitVars();
                 }
             }
         }
@@ -201,18 +201,18 @@ namespace VEMS_RDLC_API.Reports {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         private void InitClass() {
-            this.DataSetName = "VoucherDataset";
+            this.DataSetName = "DataSet1";
             this.Prefix = "";
-            this.Namespace = "http://tempuri.org/VoucherDataset.xsd";
+            this.Namespace = "http://tempuri.org/DataSet1.xsd";
             this.EnforceConstraints = true;
             this.SchemaSerializationMode = global::System.Data.SchemaSerializationMode.IncludeSchema;
-            this.tableFeeVoucherReportModel = new FeeVoucherReportModelDataTable();
-            base.Tables.Add(this.tableFeeVoucherReportModel);
+            this.tableFeeChallanTable = new FeeChallanTableDataTable();
+            base.Tables.Add(this.tableFeeChallanTable);
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        private bool ShouldSerializeFeeVoucherReportModel() {
+        private bool ShouldSerializeFeeChallanTable() {
             return false;
         }
         
@@ -227,7 +227,7 @@ namespace VEMS_RDLC_API.Reports {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
         public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedDataSetSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
-            VoucherDataset ds = new VoucherDataset();
+            DataSet1 ds = new DataSet1();
             global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
             global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
             global::System.Xml.Schema.XmlSchemaAny any = new global::System.Xml.Schema.XmlSchemaAny();
@@ -272,28 +272,36 @@ namespace VEMS_RDLC_API.Reports {
         }
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public delegate void FeeVoucherReportModelRowChangeEventHandler(object sender, FeeVoucherReportModelRowChangeEvent e);
+        public delegate void FeeChallanTableRowChangeEventHandler(object sender, FeeChallanTableRowChangeEvent e);
         
         /// <summary>
         ///Represents the strongly named DataTable class.
         ///</summary>
         [global::System.Serializable()]
         [global::System.Xml.Serialization.XmlSchemaProviderAttribute("GetTypedTableSchema")]
-        public partial class FeeVoucherReportModelDataTable : global::System.Data.TypedTableBase<FeeVoucherReportModelRow> {
+        public partial class FeeChallanTableDataTable : global::System.Data.TypedTableBase<FeeChallanTableRow> {
             
-            private global::System.Data.DataColumn columnVoucherNo;
+            private global::System.Data.DataColumn columnChallanNo;
             
-            private global::System.Data.DataColumn columnStudentId;
+            private global::System.Data.DataColumn columnBankName;
             
-            private global::System.Data.DataColumn columnStudentName;
-            
-            private global::System.Data.DataColumn columnClassName;
-            
-            private global::System.Data.DataColumn columnTermOrMonth;
+            private global::System.Data.DataColumn columnAccountNo;
             
             private global::System.Data.DataColumn columnIssueDate;
             
             private global::System.Data.DataColumn columnDueDate;
+            
+            private global::System.Data.DataColumn columnStudentID;
+            
+            private global::System.Data.DataColumn columnStudentName;
+            
+            private global::System.Data.DataColumn columnFatherName;
+            
+            private global::System.Data.DataColumn columnClassSection;
+            
+            private global::System.Data.DataColumn columnSemester;
+            
+            private global::System.Data.DataColumn columnSession;
             
             private global::System.Data.DataColumn columnFeeHeadName;
             
@@ -301,14 +309,16 @@ namespace VEMS_RDLC_API.Reports {
             
             private global::System.Data.DataColumn columnTotalAmount;
             
-            private global::System.Data.DataColumn columnStatus;
+            private global::System.Data.DataColumn columnLateFeeLFine;
+            
+            private global::System.Data.DataColumn columnGrossAmount;
             
             private global::System.Data.DataColumn columnAmountInWords;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FeeVoucherReportModelDataTable() {
-                this.TableName = "FeeVoucherReportModel";
+            public FeeChallanTableDataTable() {
+                this.TableName = "FeeChallanTable";
                 this.BeginInit();
                 this.InitClass();
                 this.EndInit();
@@ -316,7 +326,7 @@ namespace VEMS_RDLC_API.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FeeVoucherReportModelDataTable(global::System.Data.DataTable table) {
+            internal FeeChallanTableDataTable(global::System.Data.DataTable table) {
                 this.TableName = table.TableName;
                 if ((table.CaseSensitive != table.DataSet.CaseSensitive)) {
                     this.CaseSensitive = table.CaseSensitive;
@@ -335,48 +345,32 @@ namespace VEMS_RDLC_API.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             [System.ObsoleteAttribute("This API supports obsolete formatter-based serialization. It should not be called" +
                 " or extended by application code.", DiagnosticId="SYSLIB0051")]
-            protected FeeVoucherReportModelDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
+            protected FeeChallanTableDataTable(global::System.Runtime.Serialization.SerializationInfo info, global::System.Runtime.Serialization.StreamingContext context) : 
                     base(info, context) {
                 this.InitVars();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn VoucherNoColumn {
+            public global::System.Data.DataColumn ChallanNoColumn {
                 get {
-                    return this.columnVoucherNo;
+                    return this.columnChallanNo;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn StudentIdColumn {
+            public global::System.Data.DataColumn BankNameColumn {
                 get {
-                    return this.columnStudentId;
+                    return this.columnBankName;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn StudentNameColumn {
+            public global::System.Data.DataColumn AccountNoColumn {
                 get {
-                    return this.columnStudentName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn ClassNameColumn {
-                get {
-                    return this.columnClassName;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn TermOrMonthColumn {
-                get {
-                    return this.columnTermOrMonth;
+                    return this.columnAccountNo;
                 }
             }
             
@@ -393,6 +387,54 @@ namespace VEMS_RDLC_API.Reports {
             public global::System.Data.DataColumn DueDateColumn {
                 get {
                     return this.columnDueDate;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn StudentIDColumn {
+                get {
+                    return this.columnStudentID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn StudentNameColumn {
+                get {
+                    return this.columnStudentName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn FatherNameColumn {
+                get {
+                    return this.columnFatherName;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn ClassSectionColumn {
+                get {
+                    return this.columnClassSection;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SemesterColumn {
+                get {
+                    return this.columnSemester;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn SessionColumn {
+                get {
+                    return this.columnSession;
                 }
             }
             
@@ -422,9 +464,17 @@ namespace VEMS_RDLC_API.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public global::System.Data.DataColumn StatusColumn {
+            public global::System.Data.DataColumn LateFeeLFineColumn {
                 get {
-                    return this.columnStatus;
+                    return this.columnLateFeeLFine;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public global::System.Data.DataColumn GrossAmountColumn {
+                get {
+                    return this.columnGrossAmount;
                 }
             }
             
@@ -447,56 +497,78 @@ namespace VEMS_RDLC_API.Reports {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FeeVoucherReportModelRow this[int index] {
+            public FeeChallanTableRow this[int index] {
                 get {
-                    return ((FeeVoucherReportModelRow)(this.Rows[index]));
+                    return ((FeeChallanTableRow)(this.Rows[index]));
                 }
             }
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FeeVoucherReportModelRowChangeEventHandler FeeVoucherReportModelRowChanging;
+            public event FeeChallanTableRowChangeEventHandler FeeChallanTableRowChanging;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FeeVoucherReportModelRowChangeEventHandler FeeVoucherReportModelRowChanged;
+            public event FeeChallanTableRowChangeEventHandler FeeChallanTableRowChanged;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FeeVoucherReportModelRowChangeEventHandler FeeVoucherReportModelRowDeleting;
+            public event FeeChallanTableRowChangeEventHandler FeeChallanTableRowDeleting;
             
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public event FeeVoucherReportModelRowChangeEventHandler FeeVoucherReportModelRowDeleted;
+            public event FeeChallanTableRowChangeEventHandler FeeChallanTableRowDeleted;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void AddFeeVoucherReportModelRow(FeeVoucherReportModelRow row) {
+            public void AddFeeChallanTableRow(FeeChallanTableRow row) {
                 this.Rows.Add(row);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FeeVoucherReportModelRow AddFeeVoucherReportModelRow(string VoucherNo, string StudentId, string StudentName, string ClassName, string TermOrMonth, string IssueDate, string DueDate, string FeeHeadName, decimal Amount, decimal TotalAmount, string Status, string AmountInWords) {
-                FeeVoucherReportModelRow rowFeeVoucherReportModelRow = ((FeeVoucherReportModelRow)(this.NewRow()));
+            public FeeChallanTableRow AddFeeChallanTableRow(
+                        string ChallanNo, 
+                        string BankName, 
+                        string AccountNo, 
+                        string IssueDate, 
+                        string DueDate, 
+                        string StudentID, 
+                        string StudentName, 
+                        string FatherName, 
+                        string ClassSection, 
+                        string Semester, 
+                        string Session, 
+                        string FeeHeadName, 
+                        decimal Amount, 
+                        decimal TotalAmount, 
+                        decimal LateFeeLFine, 
+                        decimal GrossAmount, 
+                        string AmountInWords) {
+                FeeChallanTableRow rowFeeChallanTableRow = ((FeeChallanTableRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
-                        VoucherNo,
-                        StudentId,
-                        StudentName,
-                        ClassName,
-                        TermOrMonth,
+                        ChallanNo,
+                        BankName,
+                        AccountNo,
                         IssueDate,
                         DueDate,
+                        StudentID,
+                        StudentName,
+                        FatherName,
+                        ClassSection,
+                        Semester,
+                        Session,
                         FeeHeadName,
                         Amount,
                         TotalAmount,
-                        Status,
+                        LateFeeLFine,
+                        GrossAmount,
                         AmountInWords};
-                rowFeeVoucherReportModelRow.ItemArray = columnValuesArray;
-                this.Rows.Add(rowFeeVoucherReportModelRow);
-                return rowFeeVoucherReportModelRow;
+                rowFeeChallanTableRow.ItemArray = columnValuesArray;
+                this.Rows.Add(rowFeeChallanTableRow);
+                return rowFeeChallanTableRow;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public override global::System.Data.DataTable Clone() {
-                FeeVoucherReportModelDataTable cln = ((FeeVoucherReportModelDataTable)(base.Clone()));
+                FeeChallanTableDataTable cln = ((FeeChallanTableDataTable)(base.Clone()));
                 cln.InitVars();
                 return cln;
             }
@@ -504,79 +576,94 @@ namespace VEMS_RDLC_API.Reports {
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataTable CreateInstance() {
-                return new FeeVoucherReportModelDataTable();
+                return new FeeChallanTableDataTable();
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             internal void InitVars() {
-                this.columnVoucherNo = base.Columns["VoucherNo"];
-                this.columnStudentId = base.Columns["StudentId"];
-                this.columnStudentName = base.Columns["StudentName"];
-                this.columnClassName = base.Columns["ClassName"];
-                this.columnTermOrMonth = base.Columns["TermOrMonth"];
+                this.columnChallanNo = base.Columns["ChallanNo"];
+                this.columnBankName = base.Columns["BankName"];
+                this.columnAccountNo = base.Columns["AccountNo"];
                 this.columnIssueDate = base.Columns["IssueDate"];
                 this.columnDueDate = base.Columns["DueDate"];
+                this.columnStudentID = base.Columns["StudentID"];
+                this.columnStudentName = base.Columns["StudentName"];
+                this.columnFatherName = base.Columns["FatherName"];
+                this.columnClassSection = base.Columns["ClassSection"];
+                this.columnSemester = base.Columns["Semester"];
+                this.columnSession = base.Columns["Session"];
                 this.columnFeeHeadName = base.Columns["FeeHeadName"];
                 this.columnAmount = base.Columns["Amount"];
                 this.columnTotalAmount = base.Columns["TotalAmount"];
-                this.columnStatus = base.Columns["Status"];
+                this.columnLateFeeLFine = base.Columns["LateFeeLFine"];
+                this.columnGrossAmount = base.Columns["GrossAmount"];
                 this.columnAmountInWords = base.Columns["AmountInWords"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             private void InitClass() {
-                this.columnVoucherNo = new global::System.Data.DataColumn("VoucherNo", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnVoucherNo);
-                this.columnStudentId = new global::System.Data.DataColumn("StudentId", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStudentId);
-                this.columnStudentName = new global::System.Data.DataColumn("StudentName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStudentName);
-                this.columnClassName = new global::System.Data.DataColumn("ClassName", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnClassName);
-                this.columnTermOrMonth = new global::System.Data.DataColumn("TermOrMonth", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnTermOrMonth);
+                this.columnChallanNo = new global::System.Data.DataColumn("ChallanNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnChallanNo);
+                this.columnBankName = new global::System.Data.DataColumn("BankName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnBankName);
+                this.columnAccountNo = new global::System.Data.DataColumn("AccountNo", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnAccountNo);
                 this.columnIssueDate = new global::System.Data.DataColumn("IssueDate", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnIssueDate);
                 this.columnDueDate = new global::System.Data.DataColumn("DueDate", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnDueDate);
+                this.columnStudentID = new global::System.Data.DataColumn("StudentID", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStudentID);
+                this.columnStudentName = new global::System.Data.DataColumn("StudentName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStudentName);
+                this.columnFatherName = new global::System.Data.DataColumn("FatherName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnFatherName);
+                this.columnClassSection = new global::System.Data.DataColumn("ClassSection", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnClassSection);
+                this.columnSemester = new global::System.Data.DataColumn("Semester", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSemester);
+                this.columnSession = new global::System.Data.DataColumn("Session", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnSession);
                 this.columnFeeHeadName = new global::System.Data.DataColumn("FeeHeadName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnFeeHeadName);
                 this.columnAmount = new global::System.Data.DataColumn("Amount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAmount);
                 this.columnTotalAmount = new global::System.Data.DataColumn("TotalAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTotalAmount);
-                this.columnStatus = new global::System.Data.DataColumn("Status", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStatus);
+                this.columnLateFeeLFine = new global::System.Data.DataColumn("LateFeeLFine", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLateFeeLFine);
+                this.columnGrossAmount = new global::System.Data.DataColumn("GrossAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGrossAmount);
                 this.columnAmountInWords = new global::System.Data.DataColumn("AmountInWords", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAmountInWords);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FeeVoucherReportModelRow NewFeeVoucherReportModelRow() {
-                return ((FeeVoucherReportModelRow)(this.NewRow()));
+            public FeeChallanTableRow NewFeeChallanTableRow() {
+                return ((FeeChallanTableRow)(this.NewRow()));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Data.DataRow NewRowFromBuilder(global::System.Data.DataRowBuilder builder) {
-                return new FeeVoucherReportModelRow(builder);
+                return new FeeChallanTableRow(builder);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override global::System.Type GetRowType() {
-                return typeof(FeeVoucherReportModelRow);
+                return typeof(FeeChallanTableRow);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanged(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanged(e);
-                if ((this.FeeVoucherReportModelRowChanged != null)) {
-                    this.FeeVoucherReportModelRowChanged(this, new FeeVoucherReportModelRowChangeEvent(((FeeVoucherReportModelRow)(e.Row)), e.Action));
+                if ((this.FeeChallanTableRowChanged != null)) {
+                    this.FeeChallanTableRowChanged(this, new FeeChallanTableRowChangeEvent(((FeeChallanTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -584,8 +671,8 @@ namespace VEMS_RDLC_API.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowChanging(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowChanging(e);
-                if ((this.FeeVoucherReportModelRowChanging != null)) {
-                    this.FeeVoucherReportModelRowChanging(this, new FeeVoucherReportModelRowChangeEvent(((FeeVoucherReportModelRow)(e.Row)), e.Action));
+                if ((this.FeeChallanTableRowChanging != null)) {
+                    this.FeeChallanTableRowChanging(this, new FeeChallanTableRowChangeEvent(((FeeChallanTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -593,8 +680,8 @@ namespace VEMS_RDLC_API.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleted(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleted(e);
-                if ((this.FeeVoucherReportModelRowDeleted != null)) {
-                    this.FeeVoucherReportModelRowDeleted(this, new FeeVoucherReportModelRowChangeEvent(((FeeVoucherReportModelRow)(e.Row)), e.Action));
+                if ((this.FeeChallanTableRowDeleted != null)) {
+                    this.FeeChallanTableRowDeleted(this, new FeeChallanTableRowChangeEvent(((FeeChallanTableRow)(e.Row)), e.Action));
                 }
             }
             
@@ -602,14 +689,14 @@ namespace VEMS_RDLC_API.Reports {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             protected override void OnRowDeleting(global::System.Data.DataRowChangeEventArgs e) {
                 base.OnRowDeleting(e);
-                if ((this.FeeVoucherReportModelRowDeleting != null)) {
-                    this.FeeVoucherReportModelRowDeleting(this, new FeeVoucherReportModelRowChangeEvent(((FeeVoucherReportModelRow)(e.Row)), e.Action));
+                if ((this.FeeChallanTableRowDeleting != null)) {
+                    this.FeeChallanTableRowDeleting(this, new FeeChallanTableRowChangeEvent(((FeeChallanTableRow)(e.Row)), e.Action));
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void RemoveFeeVoucherReportModelRow(FeeVoucherReportModelRow row) {
+            public void RemoveFeeChallanTableRow(FeeChallanTableRow row) {
                 this.Rows.Remove(row);
             }
             
@@ -618,7 +705,7 @@ namespace VEMS_RDLC_API.Reports {
             public static global::System.Xml.Schema.XmlSchemaComplexType GetTypedTableSchema(global::System.Xml.Schema.XmlSchemaSet xs) {
                 global::System.Xml.Schema.XmlSchemaComplexType type = new global::System.Xml.Schema.XmlSchemaComplexType();
                 global::System.Xml.Schema.XmlSchemaSequence sequence = new global::System.Xml.Schema.XmlSchemaSequence();
-                VoucherDataset ds = new VoucherDataset();
+                DataSet1 ds = new DataSet1();
                 global::System.Xml.Schema.XmlSchemaAny any1 = new global::System.Xml.Schema.XmlSchemaAny();
                 any1.Namespace = "http://www.w3.org/2001/XMLSchema";
                 any1.MinOccurs = new decimal(0);
@@ -636,7 +723,7 @@ namespace VEMS_RDLC_API.Reports {
                 type.Attributes.Add(attribute1);
                 global::System.Xml.Schema.XmlSchemaAttribute attribute2 = new global::System.Xml.Schema.XmlSchemaAttribute();
                 attribute2.Name = "tableTypeName";
-                attribute2.FixedValue = "FeeVoucherReportModelDataTable";
+                attribute2.FixedValue = "FeeChallanTableDataTable";
                 type.Attributes.Add(attribute2);
                 type.Particle = sequence;
                 global::System.Xml.Schema.XmlSchema dsSchema = ds.GetSchemaSerializable();
@@ -680,94 +767,62 @@ namespace VEMS_RDLC_API.Reports {
         /// <summary>
         ///Represents strongly named DataRow class.
         ///</summary>
-        public partial class FeeVoucherReportModelRow : global::System.Data.DataRow {
+        public partial class FeeChallanTableRow : global::System.Data.DataRow {
             
-            private FeeVoucherReportModelDataTable tableFeeVoucherReportModel;
+            private FeeChallanTableDataTable tableFeeChallanTable;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            internal FeeVoucherReportModelRow(global::System.Data.DataRowBuilder rb) : 
+            internal FeeChallanTableRow(global::System.Data.DataRowBuilder rb) : 
                     base(rb) {
-                this.tableFeeVoucherReportModel = ((FeeVoucherReportModelDataTable)(this.Table));
+                this.tableFeeChallanTable = ((FeeChallanTableDataTable)(this.Table));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string VoucherNo {
+            public string ChallanNo {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.VoucherNoColumn]));
+                        return ((string)(this[this.tableFeeChallanTable.ChallanNoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'VoucherNo\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'ChallanNo\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.VoucherNoColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string StudentId {
-                get {
-                    try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.StudentIdColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'StudentId\' in table \'FeeVoucherReportModel\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFeeVoucherReportModel.StudentIdColumn] = value;
+                    this[this.tableFeeChallanTable.ChallanNoColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string StudentName {
+            public string BankName {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.StudentNameColumn]));
+                        return ((string)(this[this.tableFeeChallanTable.BankNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'StudentName\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'BankName\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.StudentNameColumn] = value;
+                    this[this.tableFeeChallanTable.BankNameColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string ClassName {
+            public string AccountNo {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.ClassNameColumn]));
+                        return ((string)(this[this.tableFeeChallanTable.AccountNoColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'ClassName\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'AccountNo\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.ClassNameColumn] = value;
-                }
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string TermOrMonth {
-                get {
-                    try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.TermOrMonthColumn]));
-                    }
-                    catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TermOrMonth\' in table \'FeeVoucherReportModel\' is DBNull.", e);
-                    }
-                }
-                set {
-                    this[this.tableFeeVoucherReportModel.TermOrMonthColumn] = value;
+                    this[this.tableFeeChallanTable.AccountNoColumn] = value;
                 }
             }
             
@@ -776,14 +831,14 @@ namespace VEMS_RDLC_API.Reports {
             public string IssueDate {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.IssueDateColumn]));
+                        return ((string)(this[this.tableFeeChallanTable.IssueDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'IssueDate\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'IssueDate\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.IssueDateColumn] = value;
+                    this[this.tableFeeChallanTable.IssueDateColumn] = value;
                 }
             }
             
@@ -792,14 +847,110 @@ namespace VEMS_RDLC_API.Reports {
             public string DueDate {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.DueDateColumn]));
+                        return ((string)(this[this.tableFeeChallanTable.DueDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'DueDate\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'DueDate\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.DueDateColumn] = value;
+                    this[this.tableFeeChallanTable.DueDateColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string StudentID {
+                get {
+                    try {
+                        return ((string)(this[this.tableFeeChallanTable.StudentIDColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StudentID\' in table \'FeeChallanTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFeeChallanTable.StudentIDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string StudentName {
+                get {
+                    try {
+                        return ((string)(this[this.tableFeeChallanTable.StudentNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'StudentName\' in table \'FeeChallanTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFeeChallanTable.StudentNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string FatherName {
+                get {
+                    try {
+                        return ((string)(this[this.tableFeeChallanTable.FatherNameColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'FatherName\' in table \'FeeChallanTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFeeChallanTable.FatherNameColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string ClassSection {
+                get {
+                    try {
+                        return ((string)(this[this.tableFeeChallanTable.ClassSectionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'ClassSection\' in table \'FeeChallanTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFeeChallanTable.ClassSectionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Semester {
+                get {
+                    try {
+                        return ((string)(this[this.tableFeeChallanTable.SemesterColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Semester\' in table \'FeeChallanTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFeeChallanTable.SemesterColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public string Session {
+                get {
+                    try {
+                        return ((string)(this[this.tableFeeChallanTable.SessionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Session\' in table \'FeeChallanTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFeeChallanTable.SessionColumn] = value;
                 }
             }
             
@@ -808,14 +959,14 @@ namespace VEMS_RDLC_API.Reports {
             public string FeeHeadName {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.FeeHeadNameColumn]));
+                        return ((string)(this[this.tableFeeChallanTable.FeeHeadNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'FeeHeadName\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'FeeHeadName\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.FeeHeadNameColumn] = value;
+                    this[this.tableFeeChallanTable.FeeHeadNameColumn] = value;
                 }
             }
             
@@ -824,14 +975,14 @@ namespace VEMS_RDLC_API.Reports {
             public decimal Amount {
                 get {
                     try {
-                        return ((decimal)(this[this.tableFeeVoucherReportModel.AmountColumn]));
+                        return ((decimal)(this[this.tableFeeChallanTable.AmountColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Amount\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'Amount\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.AmountColumn] = value;
+                    this[this.tableFeeChallanTable.AmountColumn] = value;
                 }
             }
             
@@ -840,30 +991,46 @@ namespace VEMS_RDLC_API.Reports {
             public decimal TotalAmount {
                 get {
                     try {
-                        return ((decimal)(this[this.tableFeeVoucherReportModel.TotalAmountColumn]));
+                        return ((decimal)(this[this.tableFeeChallanTable.TotalAmountColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'TotalAmount\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'TotalAmount\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.TotalAmountColumn] = value;
+                    this[this.tableFeeChallanTable.TotalAmountColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public string Status {
+            public decimal LateFeeLFine {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.StatusColumn]));
+                        return ((decimal)(this[this.tableFeeChallanTable.LateFeeLFineColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'Status\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'LateFeeLFine\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.StatusColumn] = value;
+                    this[this.tableFeeChallanTable.LateFeeLFineColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public decimal GrossAmount {
+                get {
+                    try {
+                        return ((decimal)(this[this.tableFeeChallanTable.GrossAmountColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'GrossAmount\' in table \'FeeChallanTable\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableFeeChallanTable.GrossAmountColumn] = value;
                 }
             }
             
@@ -872,159 +1039,219 @@ namespace VEMS_RDLC_API.Reports {
             public string AmountInWords {
                 get {
                     try {
-                        return ((string)(this[this.tableFeeVoucherReportModel.AmountInWordsColumn]));
+                        return ((string)(this[this.tableFeeChallanTable.AmountInWordsColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("The value for column \'AmountInWords\' in table \'FeeVoucherReportModel\' is DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("The value for column \'AmountInWords\' in table \'FeeChallanTable\' is DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableFeeVoucherReportModel.AmountInWordsColumn] = value;
+                    this[this.tableFeeChallanTable.AmountInWordsColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsVoucherNoNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.VoucherNoColumn);
+            public bool IsChallanNoNull() {
+                return this.IsNull(this.tableFeeChallanTable.ChallanNoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetVoucherNoNull() {
-                this[this.tableFeeVoucherReportModel.VoucherNoColumn] = global::System.Convert.DBNull;
+            public void SetChallanNoNull() {
+                this[this.tableFeeChallanTable.ChallanNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsStudentIdNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.StudentIdColumn);
+            public bool IsBankNameNull() {
+                return this.IsNull(this.tableFeeChallanTable.BankNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetStudentIdNull() {
-                this[this.tableFeeVoucherReportModel.StudentIdColumn] = global::System.Convert.DBNull;
+            public void SetBankNameNull() {
+                this[this.tableFeeChallanTable.BankNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsStudentNameNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.StudentNameColumn);
+            public bool IsAccountNoNull() {
+                return this.IsNull(this.tableFeeChallanTable.AccountNoColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetStudentNameNull() {
-                this[this.tableFeeVoucherReportModel.StudentNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsClassNameNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.ClassNameColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetClassNameNull() {
-                this[this.tableFeeVoucherReportModel.ClassNameColumn] = global::System.Convert.DBNull;
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsTermOrMonthNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.TermOrMonthColumn);
-            }
-            
-            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetTermOrMonthNull() {
-                this[this.tableFeeVoucherReportModel.TermOrMonthColumn] = global::System.Convert.DBNull;
+            public void SetAccountNoNull() {
+                this[this.tableFeeChallanTable.AccountNoColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsIssueDateNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.IssueDateColumn);
+                return this.IsNull(this.tableFeeChallanTable.IssueDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetIssueDateNull() {
-                this[this.tableFeeVoucherReportModel.IssueDateColumn] = global::System.Convert.DBNull;
+                this[this.tableFeeChallanTable.IssueDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsDueDateNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.DueDateColumn);
+                return this.IsNull(this.tableFeeChallanTable.DueDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetDueDateNull() {
-                this[this.tableFeeVoucherReportModel.DueDateColumn] = global::System.Convert.DBNull;
+                this[this.tableFeeChallanTable.DueDateColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsStudentIDNull() {
+                return this.IsNull(this.tableFeeChallanTable.StudentIDColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetStudentIDNull() {
+                this[this.tableFeeChallanTable.StudentIDColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsStudentNameNull() {
+                return this.IsNull(this.tableFeeChallanTable.StudentNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetStudentNameNull() {
+                this[this.tableFeeChallanTable.StudentNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsFatherNameNull() {
+                return this.IsNull(this.tableFeeChallanTable.FatherNameColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetFatherNameNull() {
+                this[this.tableFeeChallanTable.FatherNameColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsClassSectionNull() {
+                return this.IsNull(this.tableFeeChallanTable.ClassSectionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetClassSectionNull() {
+                this[this.tableFeeChallanTable.ClassSectionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSemesterNull() {
+                return this.IsNull(this.tableFeeChallanTable.SemesterColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSemesterNull() {
+                this[this.tableFeeChallanTable.SemesterColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsSessionNull() {
+                return this.IsNull(this.tableFeeChallanTable.SessionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetSessionNull() {
+                this[this.tableFeeChallanTable.SessionColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsFeeHeadNameNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.FeeHeadNameColumn);
+                return this.IsNull(this.tableFeeChallanTable.FeeHeadNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetFeeHeadNameNull() {
-                this[this.tableFeeVoucherReportModel.FeeHeadNameColumn] = global::System.Convert.DBNull;
+                this[this.tableFeeChallanTable.FeeHeadNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsAmountNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.AmountColumn);
+                return this.IsNull(this.tableFeeChallanTable.AmountColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetAmountNull() {
-                this[this.tableFeeVoucherReportModel.AmountColumn] = global::System.Convert.DBNull;
+                this[this.tableFeeChallanTable.AmountColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsTotalAmountNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.TotalAmountColumn);
+                return this.IsNull(this.tableFeeChallanTable.TotalAmountColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetTotalAmountNull() {
-                this[this.tableFeeVoucherReportModel.TotalAmountColumn] = global::System.Convert.DBNull;
+                this[this.tableFeeChallanTable.TotalAmountColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public bool IsStatusNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.StatusColumn);
+            public bool IsLateFeeLFineNull() {
+                return this.IsNull(this.tableFeeChallanTable.LateFeeLFineColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public void SetStatusNull() {
-                this[this.tableFeeVoucherReportModel.StatusColumn] = global::System.Convert.DBNull;
+            public void SetLateFeeLFineNull() {
+                this[this.tableFeeChallanTable.LateFeeLFineColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public bool IsGrossAmountNull() {
+                return this.IsNull(this.tableFeeChallanTable.GrossAmountColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
+            public void SetGrossAmountNull() {
+                this[this.tableFeeChallanTable.GrossAmountColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public bool IsAmountInWordsNull() {
-                return this.IsNull(this.tableFeeVoucherReportModel.AmountInWordsColumn);
+                return this.IsNull(this.tableFeeChallanTable.AmountInWordsColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
             public void SetAmountInWordsNull() {
-                this[this.tableFeeVoucherReportModel.AmountInWordsColumn] = global::System.Convert.DBNull;
+                this[this.tableFeeChallanTable.AmountInWordsColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -1032,22 +1259,22 @@ namespace VEMS_RDLC_API.Reports {
         ///Row event argument class
         ///</summary>
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-        public class FeeVoucherReportModelRowChangeEvent : global::System.EventArgs {
+        public class FeeChallanTableRowChangeEvent : global::System.EventArgs {
             
-            private FeeVoucherReportModelRow eventRow;
+            private FeeChallanTableRow eventRow;
             
             private global::System.Data.DataRowAction eventAction;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FeeVoucherReportModelRowChangeEvent(FeeVoucherReportModelRow row, global::System.Data.DataRowAction action) {
+            public FeeChallanTableRowChangeEvent(FeeChallanTableRow row, global::System.Data.DataRowAction action) {
                 this.eventRow = row;
                 this.eventAction = action;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "17.0.0.0")]
-            public FeeVoucherReportModelRow Row {
+            public FeeChallanTableRow Row {
                 get {
                     return this.eventRow;
                 }

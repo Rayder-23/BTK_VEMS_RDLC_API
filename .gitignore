@@ -58,3 +58,6 @@ nunit-*.xml
 
 # VS Code Config Files
 .vs/
+
+# Dev Files
+appsettings.Development.json

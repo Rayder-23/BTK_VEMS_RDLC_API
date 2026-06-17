@@ -1624,7 +1624,7 @@
         </Style>
       </Rectangle>
     </ReportItems>
-    <Height>7.5in</Height>
+    <Height>7.7in</Height>
     <Style />
   </Body>
   <Width>11.19in</Width>
@@ -1655,24 +1655,16 @@
         <CommandText>/* Local Query */</CommandText>
       </Query>
       <Fields>
-        <Field Name="VoucherNo">
-          <DataField>VoucherNo</DataField>
+        <Field Name="ChallanNo">
+          <DataField>ChallanNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="StudentId">
-          <DataField>StudentId</DataField>
+        <Field Name="BankName">
+          <DataField>BankName</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
-        <Field Name="StudentName">
-          <DataField>StudentName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="ClassName">
-          <DataField>ClassName</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
-        </Field>
-        <Field Name="TermOrMonth">
-          <DataField>TermOrMonth</DataField>
+        <Field Name="AccountNo">
+          <DataField>AccountNo</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="IssueDate">
@@ -1681,6 +1673,30 @@
         </Field>
         <Field Name="DueDate">
           <DataField>DueDate</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StudentID">
+          <DataField>StudentID</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="StudentName">
+          <DataField>StudentName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FatherName">
+          <DataField>FatherName</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ClassSection">
+          <DataField>ClassSection</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Semester">
+          <DataField>Semester</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Session">
+          <DataField>Session</DataField>
           <rd:TypeName>System.String</rd:TypeName>
         </Field>
         <Field Name="FeeHeadName">
@@ -1695,9 +1711,13 @@
           <DataField>TotalAmount</DataField>
           <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
-        <Field Name="Status">
-          <DataField>Status</DataField>
-          <rd:TypeName>System.String</rd:TypeName>
+        <Field Name="LateFeeLFine">
+          <DataField>LateFeeLFine</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="GrossAmount">
+          <DataField>GrossAmount</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
         </Field>
         <Field Name="AmountInWords">
           <DataField>AmountInWords</DataField>
@@ -1705,9 +1725,12 @@
         </Field>
       </Fields>
       <rd:DataSetInfo>
-        <rd:DataSetName>VoucherDataset</rd:DataSetName>
-        <rd:SchemaPath>D:\Ry Work [D]\Bahria Town\Virtual Schooling\RDLC\VEMS_RDLC_API\VEMS_RDLC_API\Reports\VoucherDataset.xsd</rd:SchemaPath>
-        <rd:TableName>FeeVoucherReportModel</rd:TableName>
+        <rd:DataSetName>DataSet1</rd:DataSetName>
+        <rd:SchemaPath>D:\Ry Work [D]\Bahria Town\Virtual Schooling\RDLC\VEMS_RDLC_API\VEMS_RDLC_API\Reports\FeeChallanDataSet.xsd</rd:SchemaPath>
+        <rd:TableName>FeeChallanTable</rd:TableName>
+        <rd:TableAdapterFillMethod />
+        <rd:TableAdapterGetDataMethod />
+        <rd:TableAdapterName />
       </rd:DataSetInfo>
     </DataSet>
   </DataSets>

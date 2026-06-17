@@ -14,7 +14,7 @@ namespace VEMS.PrintEngine.Data
             base.OnModelCreating(modelBuilder);
 
             // Tells EF Core that this model maps to custom SQL queries, not a physical database table
-            modelBuilder.Entity<FeeVoucherReportModel>().HasNoKey();
+            modelBuilder.Entity<FeeChallanReportModel>().HasNoKey();
         }
     }
 }

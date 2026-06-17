@@ -7,12 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="Reports\VoucherDataset.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>VoucherDataset.Designer.cs</LastGenOutput>
+    <None Remove="Reports\FeeChallanDataSet.xsd" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Reports\FeeChallan.rdlc">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Reports\FeeChallan.rdlc">
+    <Content Include="Reports\FeeChallanDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FeeChallanDataSet.Designer.cs</LastGenOutput>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
@@ -25,14 +29,6 @@
     <PackageReference Include="System.Data.SqlClient" Version="4.9.1" />
     <PackageReference Include="System.Drawing.Common" Version="10.0.9" />
     <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.9" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Update="Reports\VoucherDataset.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>VoucherDataset.xsd</DependentUpon>
-    </Compile>
   </ItemGroup>
 
 </Project>
