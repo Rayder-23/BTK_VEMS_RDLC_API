@@ -31,4 +31,12 @@
     <PackageReference Include="System.Text.Encoding.CodePages" Version="10.0.9" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Compile Update="Reports\FeeChallanDataSet.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>FeeChallanDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
 </Project>
