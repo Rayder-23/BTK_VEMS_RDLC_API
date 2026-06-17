@@ -61,3 +61,4 @@ nunit-*.xml
 
 # Dev Files
 appsettings.Development.json
+VEMS_RDLC_API/appsettings.Development.json
